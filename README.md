@@ -54,3 +54,4 @@ If you would like to define some of the props:
   * **height** - (Number, 350) - The height of the carousel.
   * **showBubbles** - (Boolean, true) - Show the bubble indicators.
   * **showScroll** - (Boolean, false) - Show the native scroll bar.
+  * **width** - (Number, 350) - The width of the carousel.
