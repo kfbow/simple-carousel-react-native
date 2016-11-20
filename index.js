@@ -3,13 +3,9 @@
 
 import React, { Component } from 'react';
 import {
-    Dimensions,
-    Text,
     ScrollView,
     View
 } from 'react-native';
-
-export const dim = Dimensions.get('window');
 
 const styles = {
     emptyBubble: {
@@ -77,6 +73,7 @@ export default class Carousel extends Component {
         const {
             children,
             height = 350,
+            showBubbles = true,
             showScroll = false,
             width = 350,
         } = this.props;
@@ -103,7 +100,7 @@ export default class Carousel extends Component {
                     style={{ width: width, height: height }}>
                     { pages }
                 </ScrollView>
-                { this.renderBubbles(width) }
+                { showBubbles ? this.renderBubbles(width) : null }
             </View>
         )
     }
