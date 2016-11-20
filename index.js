@@ -7,16 +7,6 @@ import {
     View
 } from 'react-native';
 
-const styles = {
-    emptyBubble: {
-        width: 10,
-        height: 10,
-        backgroundColor: '#d3d3d3',
-        borderRadius: 15,
-        alignSelf: 'center',
-    }
-}
-
 export default class Carousel extends Component {
     state: {
         offset: ?Number
@@ -34,11 +24,21 @@ export default class Carousel extends Component {
         const {
             children,
             color = '#ffa500',
+            dimmedColor = '#d3d3d3',
             bubbleWidth = 10,
             bubbleHeight = 10
         } = this.props;
 
         let bubbles = [];
+
+        const emptyBubble = {
+            width: bubbleWidth,
+            height: bubbleHeight,
+            backgroundColor: dimmedColor,
+            borderRadius: 15,
+            alignSelf: 'center',
+        }
+
         const filledBubble = {
             width: bubbleWidth,
             height: bubbleHeight,
