@@ -3,6 +3,11 @@ A simple React Native carousel
 
 ![alt-tag](/SCRN.gif)
 
+###Installation
+```
+npm i simple-carousel-react-native --save
+```
+
 ###How to use
 Import the module and each child will be a page in the carousel.
 ```
