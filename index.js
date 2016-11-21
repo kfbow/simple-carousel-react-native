@@ -71,6 +71,7 @@ export default class Carousel extends Component {
 
     render() {
         const {
+            backgroundColor = '#fff',
             children,
             height = 350,
             showBubbles = true,
@@ -89,7 +90,7 @@ export default class Carousel extends Component {
         }
 
         return (
-            <View style={{ width: width }}>
+            <View style={{ width: width, backgroundColor: backgroundColor }}>
                 <ScrollView
                     horizontal={ true }
                     pagingEnabled={ true }

@@ -47,6 +47,7 @@ If you would like to define some of the props:
 
 ###API
   *(Type, Default)*
+  * **backgroundColor** - (String, '#fff') - The background color of the parent `<View>`.
   * **bubbleHeight** - (Number, 10) - The height of the bubble indicator.
   * **bubbleWidth** - (Number, 10) - The width of the bubble indicator.
   * **color** - (String, '#ffa500') - The color of the highlighted bubble indicator.
