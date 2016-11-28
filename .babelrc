@@ -1,0 +1,4 @@
+{
+  "plugins": ["syntax-flow", "transform-class-properties"],
+  "presets": ["react-native"]
+}
