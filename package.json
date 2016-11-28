@@ -4,7 +4,7 @@
   "description": "A simple React Native carousel",
   "main": "index.js",
   "scripts": {
-    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-file index.js"
   },
   "babel": {
     "presets": [
