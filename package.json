@@ -4,7 +4,12 @@
   "description": "A simple React Native carousel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-file index.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/kfbow/simple-carousel-react-native/issues"
   },
-  "homepage": "https://github.com/kfbow/simple-carousel-react-native#readme"
+  "homepage": "https://github.com/kfbow/simple-carousel-react-native#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react-native": "^1.9.0"
+  }
 }
