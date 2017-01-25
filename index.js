@@ -49,7 +49,7 @@ export default class Carousel extends Component {
 
         for (var i=0; i<children.length; i++) {
             bubbles.push (
-                <View style={ styles.emptyBubble } key={ width * i }/>
+                <View style={ emptyBubble } key={ width * i }/>
             )
         }
 
