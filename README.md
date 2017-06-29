@@ -3,12 +3,12 @@ A simple React Native carousel
 
 ![alt-tag](/SCRN.gif)
 
-###Installation
+## Installation
 ```
 npm i simple-carousel-react-native --save
 ```
 
-###How to use
+## How to use
 Import the module and each child will be a page in the carousel.
 ```
 import Carousel from 'simple-carousel-react-native';
@@ -45,7 +45,7 @@ If you would like to define some of the props:
 </Carousel>
 ```
 
-###API
+## API
   *(Type, Default)*
   * **backgroundColor** - (String, '#fff') - The background color of the parent `<View>`.
   * **bubbleHeight** - (Number, 10) - The height of the bubble indicator.
